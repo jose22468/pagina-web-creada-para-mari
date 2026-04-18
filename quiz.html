@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz ABDL tierno</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="topbar card">
+      <a class="link" href="index.html">← Volver</a>
+      <div>
+        <p class="badge">Quiz ABDL tierno</p>
+        <h1>¿Qué estilo ABDL comfy va más contigo hoy?</h1>
+        <p class="lead">Un test suave y cute para orientarte según tus preferencias de comodidad, diseño y ritmo del día.</p>
+      </div>
+    </header>
+
+    <section class="card quiz">
+      <form id="quizForm">
+        <div class="question">
+          <h2>1. ¿Qué sensación buscas primero?</h2>
+          <label><input type="radio" name="q1" value="cuddly" /> Máxima comodidad y abrazo suave</label>
+          <label><input type="radio" name="q1" value="playful" /> Algo flexible para moverme y jugar</label>
+          <label><input type="radio" name="q1" value="night" /> Seguridad extra para descanso largo</label>
+          <label><input type="radio" name="q1" value="discreet" /> Perfil bajo para pasar desapercibido/a</label>
+        </div>
+
+        <div class="question">
+          <h2>2. ¿Qué grosor te hace sentir más tranquilo/a?</h2>
+          <label><input type="radio" name="q2" value="cuddly" /> Medio y acolchadito</label>
+          <label><input type="radio" name="q2" value="playful" /> Ligero y cómodo para actividad</label>
+          <label><input type="radio" name="q2" value="night" /> Más grueso para mayor duración</label>
+          <label><input type="radio" name="q2" value="discreet" /> Muy fino y discreto</label>
+        </div>
+
+        <div class="question">
+          <h2>3. En diseño, ¿qué prefieres?</h2>
+          <label><input type="radio" name="q3" value="cuddly" /> Tonos suaves y estética calmada</label>
+          <label><input type="radio" name="q3" value="playful" /> Colores alegres y vibes juguetonas</label>
+          <label><input type="radio" name="q3" value="night" /> Diseño funcional para rutinas nocturnas</label>
+          <label><input type="radio" name="q3" value="discreet" /> Estilo neutro y casi invisible</label>
+        </div>
+
+        <div class="question">
+          <h2>4. ¿Qué tan importante es la discreción?</h2>
+          <label><input type="radio" name="q4" value="cuddly" /> Importa, pero priorizo sentirme comfy</label>
+          <label><input type="radio" name="q4" value="playful" /> Solo lo normal, quiero libertad</label>
+          <label><input type="radio" name="q4" value="night" /> Media, me enfoco en protección</label>
+          <label><input type="radio" name="q4" value="discreet" /> Súper importante, cuanto menos se note mejor</label>
+        </div>
+
+        <div class="question">
+          <h2>5. ¿Para cuánto tiempo lo piensas usar seguido?</h2>
+          <label><input type="radio" name="q5" value="cuddly" /> Un rato tranquilo en casa</label>
+          <label><input type="radio" name="q5" value="playful" /> Periodos cortos con bastante movimiento</label>
+          <label><input type="radio" name="q5" value="night" /> Varias horas, especialmente de noche</label>
+          <label><input type="radio" name="q5" value="discreet" /> Salidas breves donde quiero perfil bajo</label>
+        </div>
+
+        <div class="question">
+          <h2>6. ¿Cuál describe mejor tu nivel de actividad?</h2>
+          <label><input type="radio" name="q6" value="cuddly" /> Relax total, ritmo lento</label>
+          <label><input type="radio" name="q6" value="playful" /> Activo/a, me muevo bastante</label>
+          <label><input type="radio" name="q6" value="night" /> Baja actividad, más descanso</label>
+          <label><input type="radio" name="q6" value="discreet" /> Actividad moderada en espacios públicos</label>
+        </div>
+
+        <div class="question">
+          <h2>7. ¿Qué tan cute quieres el estilo?</h2>
+          <label><input type="radio" name="q7" value="cuddly" /> Cute suave y tierno</label>
+          <label><input type="radio" name="q7" value="playful" /> Cute divertido y expresivo</label>
+          <label><input type="radio" name="q7" value="night" /> Cute mínimo, práctico</label>
+          <label><input type="radio" name="q7" value="discreet" /> Casi nada cute, más neutral</label>
+        </div>
+
+        <div class="question">
+          <h2>8. ¿Dónde planeas usarlo más?</h2>
+          <label><input type="radio" name="q8" value="cuddly" /> En casa, momento cozy</label>
+          <label><input type="radio" name="q8" value="playful" /> En casa con actividades y juego</label>
+          <label><input type="radio" name="q8" value="night" /> Principalmente para dormir</label>
+          <label><input type="radio" name="q8" value="discreet" /> En salidas, recados o visitas cortas</label>
+        </div>
+
+        <div class="actions">
+          <button class="btn primary" type="submit">Ver resultado</button>
+          <button class="btn secondary" type="reset">Reiniciar</button>
+        </div>
+      </form>
+
+      <div id="result" class="result hidden"></div>
+    </section>
+  </main>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
