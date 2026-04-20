@@ -239,3 +239,23 @@ a { color: inherit; text-decoration: none; }
     font-size: .95rem;
   }
 }
+
+.game-wrap {
+  padding: 28px;
+}
+
+.game-stats {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+#gameCanvas {
+  width: 100%;
+  border-radius: 18px;
+  border: 2px solid rgba(134, 191, 243, 0.45);
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(233, 134, 192, 0.18);
+}
