@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minijuego cute</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="topbar card">
+      <a class="link" href="index.html">← Volver</a>
+      <div>
+        <p class="badge">Minijuego tierno</p>
+        <h1>Recoge las estrellitas de confort ✨</h1>
+        <p class="lead">Mueve al personaje con flechas o WASD y reúne estrellas para subir tu puntaje antes de que termine el tiempo.</p>
+      </div>
+    </header>
+
+    <section class="card game-wrap">
+      <div class="game-stats">
+        <p>Puntaje: <strong id="score">0</strong></p>
+        <p>Tiempo: <strong id="time">30</strong>s</p>
+      </div>
+      <canvas id="gameCanvas" width="760" height="420" aria-label="Minijuego de recolección"></canvas>
+      <div class="actions">
+        <button id="restartBtn" class="btn secondary" type="button">Jugar otra vez</button>
+      </div>
+      <div id="gameMessage" class="result hidden"></div>
+    </section>
+  </main>
+
+  <script src="juego.js"></script>
+</body>
+</html>
